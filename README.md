@@ -1,108 +1,72 @@
 <div align="center">
 
-# Olá, eu sou o Eduardo Leandro 👋
+# Eduardo Leandro
 
-### Engenheiro da Computação _(graduando)_ · Manaus, Brasil 🇧🇷
+**Visão computacional & IA embarcada** · Engenharia da Computação (UFAM) · Manaus, Brasil 🇧🇷
 
-**Do app mobile ao modelo rodando na placa — construo software de ponta a ponta.**
+_Do modelo treinado ao binário rodando na NPU da placa._
+
+[![Email](https://img.shields.io/badge/leandroedueng@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:leandroedueng@gmail.com)
 
 </div>
 
 ---
 
-Comecei desenvolvendo aplicativos mobile e software em Java, e hoje atuo com **visão computacional e sistemas embarcados** — trabalhando tanto com modelos de deep learning quanto com processamento digital de imagens (PDI) clássico. Gosto de conduzir o pipeline completo, do desenvolvimento do modelo até a execução em hardware.
-
-- 🔭 **Foco atual:** visão computacional (modelos e PDI) e sistemas embarcados
-- 🧰 **Background:** desenvolvimento mobile e software em Java
-- 🎓 **Graduando** em Engenharia da Computação na UFAM
-- 💬 **Fala comigo sobre:** visão computacional, processamento de imagens e IA na borda
+Desenvolvo sistemas de visão computacional que rodam **na borda**: treino e converto modelos (YOLO → ONNX → INT8),
+escrevo a inferência em C/C++ e Python direto no hardware e uso **PDI clássico** onde deep learning não é a melhor
+ferramenta. Comecei com desenvolvimento mobile e Java; hoje meu foco é levar o pipeline completo até a placa e medir
+o resultado em hardware real, não só em simulação.
 
 ---
 
-## 🛠️ Stack & Ferramentas
+## 🔧 Projeto em destaque
 
-**Linguagens**
+### [sdkEldenGinner](https://github.com/EldenGineer/sdkEldenGinner) — gerenciador de câmeras V4L2
+Ferramenta (GUI em PySide6 + CLI) para capturar datasets com controle total da câmera: modos e controles lidos do
+driver, verificação do modo negociado, fotos com metadados em JSON, vídeo H.264/NVENC via ffmpeg com duração real,
+modo rajada e navegação completa por teclado. Instalador idempotente e suíte de testes sem hardware.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-**Mobile & Frontend**
-
-![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
-
-**IA / Visão Computacional**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![ONNX](https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge&logo=yolo&logoColor=white)
-
-**Backend & Dados**
-
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Google APIs](https://img.shields.io/badge/Google_APIs-4285F4?style=for-the-badge&logo=google&logoColor=white)
-
-**Runtimes de borda / Hardware**
-
-![Rockchip RKNN](https://img.shields.io/badge/RKNN-Rockchip-orange?style=for-the-badge)
-![Qualcomm QAIRT](https://img.shields.io/badge/QAIRT%2FSNPE-Qualcomm-3253DC?style=for-the-badge&logo=qualcomm&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+`Python` `PySide6` `V4L2` `OpenCV` `ffmpeg` `pytest`
 
 ---
 
-## 📱 Projetos — Desenvolvimento Mobile
+## 🏭 Experiência
 
-| Projeto | Descrição | Stack |
-|---|---|---|
-| **[nome-do-projeto](link)** | _Descreva em uma linha o que o app faz e o problema que resolve._ | React Native · Expo · Firebase |
-| **[nome-do-projeto](link)** | _Ex.: app com integração a APIs do Google e armazenamento local._ | React Native · SQLite · Google APIs |
-
-## ☕ Projetos — Software em Java
-
-| Projeto | Descrição | Stack |
-|---|---|---|
-| **[nome-do-projeto](link)** | _Descreva o software: propósito, escopo e o que ele entrega._ | Java |
-
-## 👁️ Projetos — Visão Computacional & Sistemas Embarcados
-
-| Projeto | Descrição | Stack |
-|---|---|---|
-| **[nome-do-projeto](link)** | Detecção de defeitos em superfícies reflexivas — pipeline de visão industrial com 3 câmeras e iluminação difusa controlada. | Python · OpenCV · PyTorch |
-| **[gesture-ctrl](link)** | Reconhecimento de gestos em tempo real na Luckfox Pico Ultra (RV1106). YOLOv8 → RKNN INT8, inferência C++, controle de GPIO. | C++ · RKNN · YOLOv8 |
-| **[nome-do-projeto](link)** | Pipeline de segmentação YOLOv8 offline na Radxa Dragon Q6A (NPU Hexagon v68) via QAIRT. | Python · QAIRT · ONNX |
+**Desenvolvedor de IA embarcada / visão computacional** _(projetos com código privado)_
+- **YOLOv8 na NPU da Radxa Dragon Q6A (QCS6490 / HTP v68):** pipeline em Docker `.pt → .onnx → .dlc → INT8 → context-binary`,
+  quantização com calibração no domínio, inferência em C pela API QNN direta, câmera ao vivo e benchmarks na placa.
+- **Inspeção visual industrial** de peças reflexivas: câmara com 3 câmeras e iluminação difusa controlada.
+- **Inspeção de placas:** YOLO para localizar a placa + ROIs relativas com PDI.
+- **Luckfox Pico Ultra (RV1106):** reconhecimento de gestos e detecção de instrumentos, YOLO → RKNN INT8, inferência em C++.
 
 ---
 
-## 🐍 Atividade
+## 🛠️ Stack
+
+| Área | Ferramentas |
+|---|---|
+| **Linguagens** | Python · C · C++ · Java · TypeScript |
+| **Visão / IA** | PyTorch · Ultralytics YOLO · OpenCV · ONNX |
+| **Borda** | Qualcomm QAIRT/QNN · Rockchip RKNN · Linux embarcado · V4L2 |
+| **Ferramentas** | Docker · Git · ffmpeg · PySide6 |
+| **Mobile** | React Native · Expo · Firebase · SQLite |
+| **Hardware** | Radxa Dragon Q6A (QCS6490) · Luckfox Pico Ultra (RV1106) · FPGA Cyclone IV (VHDL) |
+
+---
+
+<details>
+<summary>📊 Atividade no GitHub</summary>
+<br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EngLeandro07/EngLeandro07/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EngLeandro07/EngLeandro07/output/github-snake.svg" />
-  <img alt="Cobrinha comendo os commits" src="https://raw.githubusercontent.com/EngLeandro07/EngLeandro07/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EldenGineer/EldenGineer/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EldenGineer/EldenGineer/output/github-snake.svg" />
+  <img alt="Contribuições" src="https://raw.githubusercontent.com/EldenGineer/EldenGineer/output/github-snake.svg" />
 </picture>
 
-## 📊 Estatísticas
-
 <div align="center">
 
-![Métricas do GitHub](https://raw.githubusercontent.com/EngLeandro07/EngLeandro07/main/metrics.svg)
+![Métricas do GitHub](https://raw.githubusercontent.com/EldenGineer/EldenGineer/main/metrics.svg)
 
 </div>
-
----
-
-## 📫 Contato
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/[seu-perfil])
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:leandroedueng@gmail.com)
-
-</div>
+</details>
