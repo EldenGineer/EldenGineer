@@ -6,7 +6,7 @@
 
 _Do modelo treinado ao binário rodando na NPU da placa._
 
-[![Email](https://img.shields.io/badge/leandroedueng@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:leandroedueng@gmail.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:leandroedueng@gmail.com)
 
 </div>
 
