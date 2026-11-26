@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" alt="Eduardo Leandro, visão computacional embarcada para a indústria. Aplicação: Poka-Yoke e otimização de processos. Plataformas: NPUs Qualcomm, Rockchip e NVIDIA." />
+  <img src="assets/banner.svg" width="100%" alt="EldenGineer, visão computacional embarcada, do sensor à NPU. Aplicação: Poka-Yoke e otimização de processos. Plataformas: NPUs Qualcomm, Rockchip e NVIDIA." />
 </p>
 
 <p align="center">
