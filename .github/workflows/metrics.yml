@@ -38,3 +38,11 @@ jobs:
 
           # --- Hábitos de commits: desligado (plugin gerava "Unexpected error" na imagem) ---
           plugin_habits: no
+
+          # --- Estilo: texto cinza legível nos temas claro e escuro, destaques em azul ---
+          extras_css: |
+            svg { color: #8b949e !important; }
+            h1, h2, h3 { color: #2f81f7 !important; }
+            h2 { font-weight: 600 !important; }
+            .field svg { fill: #2f81f7 !important; }
+            .field.language.details small, footer { color: #8b949e !important; }
