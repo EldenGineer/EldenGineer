@@ -1,14 +1,10 @@
-<div align="center">
+<p align="center">
+  <img src="assets/banner.svg" width="100%" alt="Eduardo Leandro, visão computacional embarcada para a indústria. Aplicação: Poka-Yoke e otimização de processos. Plataformas: NPUs Qualcomm, Rockchip e NVIDIA." />
+</p>
 
-# Eduardo Leandro
-
-**Visão computacional embarcada** · Engenharia da Computação (UFAM) · Manaus, Brasil 🇧🇷
-
-_Da linha de produção ao modelo rodando na placa._
-
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:leandroedueng@gmail.com)
-
-</div>
+<p align="center">
+  <a href="mailto:leandroedueng@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
 ---
 
@@ -51,20 +47,13 @@ modelo e ao **embarque em SBCs**, e valido em hardware real qual placa atende ca
 
 ## 🏭 Experiência
 
-**Contagem e classificação de aros na saída de forno industrial** _(código privado)_
-Câmera fixa sobre a esteira e **YOLO11m** identificando o modelo de cada aro. Rastreamento com BoT-SORT conta cada peça uma
-única vez ao cruzar a linha de contagem, e cada evento é enviado ao sistema de produção da fábrica por REST, com buffer em
-disco que não perde eventos e IHM web para o operador. Embarcado numa **Radxa ROCK 4D** (RK3576) instalada na fábrica,
-com acesso remoto por túnel SSH reverso e RustDesk como redundância.
+<p align="center">
+  <img src="assets/exp-contagem-aros.svg" width="100%" alt="Contagem de aros na saída do forno (código privado). Câmera fixa sobre a esteira e YOLO11m identificando o modelo de cada aro; BoT-SORT conta cada peça uma única vez e cada evento segue por REST ao sistema de produção, com buffer em disco e IHM web. Placa Radxa ROCK 4D (RK3576), acesso por túnel SSH reverso e RustDesk." />
+</p>
 
-`Python` `YOLO11` `BoT-SORT` `OpenCV` `Flask` `RK3576` `REST` `Docker` `SSH`
-
-**Reconhecimento de gestos com YOLOv8 INT8 em placa de recursos extremamente baixos** _(código privado)_
-Modelo YOLOv8 quantizado em INT8 rodando na NPU da **Luckfox Pico Ultra** (Rockchip RV1106: Cortex-A7 single-core,
-NPU de 0,5 TOPS e 256 MB de RAM). Aplicação em **C++** com a API RKNN, cross-compilada para ARM com uClibc, lendo a câmera
-pelo stream RTSP do ISP da placa. Cada gesto detectado aciona LEDs via **GPIO** e é enviado ao host por **UDP**.
-
-`C++` `YOLOv8` `RKNN` `INT8` `RV1106` `GPIO` `UDP` `CMake`
+<p align="center">
+  <img src="assets/exp-gestos-luckfox.svg" width="100%" alt="Gestos com YOLOv8 INT8 numa placa mínima (código privado). YOLOv8 INT8 na NPU da Luckfox Pico Ultra (RV1106, Cortex-A7, 256 MB de RAM, 0,5 TOPS), aplicação em C++ com RKNN, saída por GPIO e UDP." />
+</p>
 
 ---
 
