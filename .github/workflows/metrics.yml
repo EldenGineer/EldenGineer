@@ -15,6 +15,18 @@ jobs:
     permissions:
       contents: write
     steps:
+      # O CSS (com as fontes embutidas) fica em assets/metrics.css e e lido aqui
+      - uses: actions/checkout@v4
+
+      - name: Ler CSS das metricas
+        id: css
+        run: |
+          {
+            echo 'css<<CSS_EOF'
+            cat assets/metrics.css
+            echo 'CSS_EOF'
+          } >> "$GITHUB_OUTPUT"
+
       - uses: lowlighter/metrics@latest
         with:
           # Token pessoal (PAT) — precisa ser criado e salvo como secret METRICS_TOKEN
@@ -22,7 +34,8 @@ jobs:
           user: ${{ github.repository_owner }}
           filename: metrics.svg
           template: classic
-          base: header, activity, community, repositories, metadata
+          # Sem community e repositories: eram so contadores zerados
+          base: header, activity, metadata
           config_timezone: America/Manaus
 
           # --- Gráfico de linguagens mais usadas ---
@@ -30,7 +43,8 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
-          plugin_languages_ignored: html
+          # HTML distorcia o gráfico; TypeScript, Java, JavaScript e CSS vêm dos projetos antigos de mobile
+          plugin_languages_ignored: html, typescript, java, javascript, css
 
           # --- Calendário isométrico (blocos de commits em 3D) ---
           plugin_isocalendar: yes
@@ -39,10 +53,5 @@ jobs:
           # --- Hábitos de commits: desligado (plugin gerava "Unexpected error" na imagem) ---
           plugin_habits: no
 
-          # --- Estilo: texto cinza legível nos temas claro e escuro, destaques em azul ---
-          extras_css: |
-            svg { color: #8b949e !important; }
-            h1, h2, h3 { color: #2f81f7 !important; }
-            h2 { font-weight: 600 !important; }
-            .field svg { fill: #2f81f7 !important; }
-            .field.language.details small, footer { color: #8b949e !important; }
+          # --- Estilo placa de máquina (latão e esmalte), mesmo do banner ---
+          extras_css: ${{ steps.css.outputs.css }}
